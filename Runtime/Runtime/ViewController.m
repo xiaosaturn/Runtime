@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+Property.h"
 
 @interface ViewController ()
 
@@ -16,9 +17,28 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    [self dynamicAddProperty];
 }
 
+//交换系统方法
+- (void)exchangeImageNamedMethod{
+    UIImageView *imageV = [[UIImageView alloc] initWithFrame:self.view.bounds];
+    UIImage *image = [UIImage imageNamed:@"scenery.jpg"];
+    imageV.image = image;
+    [self.view addSubview:imageV];
+}
+
+//给分类动态添加属性
+- (void)dynamicAddProperty{
+    NSObject *objc = [[NSObject alloc] init];
+    objc.name = @"晓锟";
+    NSLog(@"My Name is %@",objc.name);
+}
+
+//字典转模型
+- (void)dictToModel{
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

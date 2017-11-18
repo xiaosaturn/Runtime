@@ -16,6 +16,9 @@
 		11913E071FC00BD500E10BE9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913E061FC00BD500E10BE9 /* main.m */; };
 		11913E111FC00BD500E10BE9 /* RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913E101FC00BD500E10BE9 /* RuntimeTests.m */; };
 		11913E1C1FC00BD600E10BE9 /* RuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913E1B1FC00BD500E10BE9 /* RuntimeUITests.m */; };
+		11913E2B1FC0469D00E10BE9 /* UIImage+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913E2A1FC0469D00E10BE9 /* UIImage+Image.m */; };
+		11913E2E1FC0481700E10BE9 /* scenery.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 11913E2D1FC0481700E10BE9 /* scenery.jpg */; };
+		11913E311FC0495800E10BE9 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913E301FC0495800E10BE9 /* NSObject+Property.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,11 @@
 		11913E171FC00BD500E10BE9 /* RuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		11913E1B1FC00BD500E10BE9 /* RuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RuntimeUITests.m; sourceTree = "<group>"; };
 		11913E1D1FC00BD600E10BE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11913E291FC0469D00E10BE9 /* UIImage+Image.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Image.h"; sourceTree = "<group>"; };
+		11913E2A1FC0469D00E10BE9 /* UIImage+Image.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Image.m"; sourceTree = "<group>"; };
+		11913E2D1FC0481700E10BE9 /* scenery.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = scenery.jpg; sourceTree = "<group>"; };
+		11913E2F1FC0495800E10BE9 /* NSObject+Property.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		11913E301FC0495800E10BE9 /* NSObject+Property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +111,15 @@
 		11913DF31FC00BD500E10BE9 /* Runtime */ = {
 			isa = PBXGroup;
 			children = (
+				11913E2C1FC0480E00E10BE9 /* Image */,
 				11913DF41FC00BD500E10BE9 /* AppDelegate.h */,
 				11913DF51FC00BD500E10BE9 /* AppDelegate.m */,
 				11913DF71FC00BD500E10BE9 /* ViewController.h */,
 				11913DF81FC00BD500E10BE9 /* ViewController.m */,
+				11913E291FC0469D00E10BE9 /* UIImage+Image.h */,
+				11913E2A1FC0469D00E10BE9 /* UIImage+Image.m */,
+				11913E2F1FC0495800E10BE9 /* NSObject+Property.h */,
+				11913E301FC0495800E10BE9 /* NSObject+Property.m */,
 				11913DFA1FC00BD500E10BE9 /* Main.storyboard */,
 				11913E001FC00BD500E10BE9 /* Assets.xcassets */,
 				11913E021FC00BD500E10BE9 /* LaunchScreen.storyboard */,
@@ -133,6 +146,14 @@
 				11913E1D1FC00BD600E10BE9 /* Info.plist */,
 			);
 			path = RuntimeUITests;
+			sourceTree = "<group>";
+		};
+		11913E2C1FC0480E00E10BE9 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				11913E2D1FC0481700E10BE9 /* scenery.jpg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,6 +265,7 @@
 				11913E041FC00BD500E10BE9 /* LaunchScreen.storyboard in Resources */,
 				11913E011FC00BD500E10BE9 /* Assets.xcassets in Resources */,
 				11913DFC1FC00BD500E10BE9 /* Main.storyboard in Resources */,
+				11913E2E1FC0481700E10BE9 /* scenery.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,8 +291,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				11913DF91FC00BD500E10BE9 /* ViewController.m in Sources */,
+				11913E2B1FC0469D00E10BE9 /* UIImage+Image.m in Sources */,
 				11913DF61FC00BD500E10BE9 /* AppDelegate.m in Sources */,
 				11913E071FC00BD500E10BE9 /* main.m in Sources */,
+				11913E311FC0495800E10BE9 /* NSObject+Property.m in Sources */,
 				11913DFF1FC00BD500E10BE9 /* Runtime.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
