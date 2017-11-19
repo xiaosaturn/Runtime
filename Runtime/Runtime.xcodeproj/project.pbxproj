@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		117C37C81FC131A2004AA861 /* XKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37C71FC131A2004AA861 /* XKPerson.m */; };
 		117C37CB1FC140A2004AA861 /* XKTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37CA1FC140A2004AA861 /* XKTeacher.m */; };
+		117C37CE1FC14D48004AA861 /* NSObject+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37CD1FC14D48004AA861 /* NSObject+Swizzling.m */; };
+		117C37D41FC150E8004AA861 /* UIViewController+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37D31FC150E8004AA861 /* UIViewController+Swizzling.m */; };
+		117C37D71FC15252004AA861 /* NSMutableArray+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37D61FC15252004AA861 /* NSMutableArray+Swizzling.m */; };
+		117C37DA1FC15414004AA861 /* UIButton+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37D91FC15414004AA861 /* UIButton+Swizzling.m */; };
+		117C37DD1FC15869004AA861 /* UILabel+Swizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37DC1FC15869004AA861 /* UILabel+Swizzling.m */; };
 		11913DF61FC00BD500E10BE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913DF51FC00BD500E10BE9 /* AppDelegate.m */; };
 		11913DF91FC00BD500E10BE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913DF81FC00BD500E10BE9 /* ViewController.m */; };
 		11913DFC1FC00BD500E10BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11913DFA1FC00BD500E10BE9 /* Main.storyboard */; };
@@ -52,6 +57,16 @@
 		117C37C71FC131A2004AA861 /* XKPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKPerson.m; sourceTree = "<group>"; };
 		117C37C91FC140A2004AA861 /* XKTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKTeacher.h; sourceTree = "<group>"; };
 		117C37CA1FC140A2004AA861 /* XKTeacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKTeacher.m; sourceTree = "<group>"; };
+		117C37CC1FC14D48004AA861 /* NSObject+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Swizzling.h"; sourceTree = "<group>"; };
+		117C37CD1FC14D48004AA861 /* NSObject+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Swizzling.m"; sourceTree = "<group>"; };
+		117C37D21FC150E8004AA861 /* UIViewController+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Swizzling.h"; sourceTree = "<group>"; };
+		117C37D31FC150E8004AA861 /* UIViewController+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Swizzling.m"; sourceTree = "<group>"; };
+		117C37D51FC15252004AA861 /* NSMutableArray+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Swizzling.h"; sourceTree = "<group>"; };
+		117C37D61FC15252004AA861 /* NSMutableArray+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Swizzling.m"; sourceTree = "<group>"; };
+		117C37D81FC15414004AA861 /* UIButton+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Swizzling.h"; sourceTree = "<group>"; };
+		117C37D91FC15414004AA861 /* UIButton+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Swizzling.m"; sourceTree = "<group>"; };
+		117C37DB1FC15869004AA861 /* UILabel+Swizzling.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Swizzling.h"; sourceTree = "<group>"; };
+		117C37DC1FC15869004AA861 /* UILabel+Swizzling.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Swizzling.m"; sourceTree = "<group>"; };
 		11913DF11FC00BD500E10BE9 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11913DF41FC00BD500E10BE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11913DF51FC00BD500E10BE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -144,10 +159,20 @@
 				11913DF51FC00BD500E10BE9 /* AppDelegate.m */,
 				11913DF71FC00BD500E10BE9 /* ViewController.h */,
 				11913DF81FC00BD500E10BE9 /* ViewController.m */,
+				117C37DB1FC15869004AA861 /* UILabel+Swizzling.h */,
+				117C37DC1FC15869004AA861 /* UILabel+Swizzling.m */,
+				117C37D81FC15414004AA861 /* UIButton+Swizzling.h */,
+				117C37D91FC15414004AA861 /* UIButton+Swizzling.m */,
+				117C37D51FC15252004AA861 /* NSMutableArray+Swizzling.h */,
+				117C37D61FC15252004AA861 /* NSMutableArray+Swizzling.m */,
+				117C37D21FC150E8004AA861 /* UIViewController+Swizzling.h */,
+				117C37D31FC150E8004AA861 /* UIViewController+Swizzling.m */,
 				117C37C91FC140A2004AA861 /* XKTeacher.h */,
 				117C37CA1FC140A2004AA861 /* XKTeacher.m */,
 				117C37C61FC131A2004AA861 /* XKPerson.h */,
 				117C37C71FC131A2004AA861 /* XKPerson.m */,
+				117C37CC1FC14D48004AA861 /* NSObject+Swizzling.h */,
+				117C37CD1FC14D48004AA861 /* NSObject+Swizzling.m */,
 				11913E291FC0469D00E10BE9 /* UIImage+Image.h */,
 				11913E2A1FC0469D00E10BE9 /* UIImage+Image.m */,
 				11913E2F1FC0495800E10BE9 /* NSObject+Property.h */,
@@ -352,9 +377,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				117C37D71FC15252004AA861 /* NSMutableArray+Swizzling.m in Sources */,
+				117C37D41FC150E8004AA861 /* UIViewController+Swizzling.m in Sources */,
 				11913DF91FC00BD500E10BE9 /* ViewController.m in Sources */,
 				117C37CB1FC140A2004AA861 /* XKTeacher.m in Sources */,
 				11913E441FC04DF700E10BE9 /* AFSecurityPolicy.m in Sources */,
+				117C37DA1FC15414004AA861 /* UIButton+Swizzling.m in Sources */,
 				11913E2B1FC0469D00E10BE9 /* UIImage+Image.m in Sources */,
 				11913DF61FC00BD500E10BE9 /* AppDelegate.m in Sources */,
 				11913E461FC04DF700E10BE9 /* AFURLResponseSerialization.m in Sources */,
@@ -363,8 +391,10 @@
 				11913E421FC04DF700E10BE9 /* AFHTTPSessionManager.m in Sources */,
 				11913E451FC04DF700E10BE9 /* AFURLRequestSerialization.m in Sources */,
 				11913E471FC04DF700E10BE9 /* AFURLSessionManager.m in Sources */,
+				117C37DD1FC15869004AA861 /* UILabel+Swizzling.m in Sources */,
 				11913E431FC04DF700E10BE9 /* AFNetworkReachabilityManager.m in Sources */,
 				11913DFF1FC00BD500E10BE9 /* Runtime.xcdatamodeld in Sources */,
+				117C37CE1FC14D48004AA861 /* NSObject+Swizzling.m in Sources */,
 				117C37C81FC131A2004AA861 /* XKPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
