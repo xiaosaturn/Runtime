@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NSObject+Property.h"
+#import "XKPerson.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self dynamicAddProperty];
+    
+    [self comRuntime];
+}
+
+//理解
+- (void)comRuntime{
+    XKPerson *p = [XKPerson new];
+    Class personClass = [XKPerson class];
+    objc_msgSend(p, @selector(run));
+    objc_msgSend(personClass, @selector(runClass));
+    objc_msgSend(p, @selector(eatWithFood:),@"香蕉");
 }
 
 //交换系统方法
