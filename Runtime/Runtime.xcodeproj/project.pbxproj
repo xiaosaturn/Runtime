@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		117C37C81FC131A2004AA861 /* XKPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37C71FC131A2004AA861 /* XKPerson.m */; };
+		117C37CB1FC140A2004AA861 /* XKTeacher.m in Sources */ = {isa = PBXBuildFile; fileRef = 117C37CA1FC140A2004AA861 /* XKTeacher.m */; };
 		11913DF61FC00BD500E10BE9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913DF51FC00BD500E10BE9 /* AppDelegate.m */; };
 		11913DF91FC00BD500E10BE9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11913DF81FC00BD500E10BE9 /* ViewController.m */; };
 		11913DFC1FC00BD500E10BE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11913DFA1FC00BD500E10BE9 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		117C37C61FC131A2004AA861 /* XKPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKPerson.h; sourceTree = "<group>"; };
 		117C37C71FC131A2004AA861 /* XKPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKPerson.m; sourceTree = "<group>"; };
+		117C37C91FC140A2004AA861 /* XKTeacher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XKTeacher.h; sourceTree = "<group>"; };
+		117C37CA1FC140A2004AA861 /* XKTeacher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XKTeacher.m; sourceTree = "<group>"; };
 		11913DF11FC00BD500E10BE9 /* Runtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Runtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11913DF41FC00BD500E10BE9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11913DF51FC00BD500E10BE9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -141,6 +144,8 @@
 				11913DF51FC00BD500E10BE9 /* AppDelegate.m */,
 				11913DF71FC00BD500E10BE9 /* ViewController.h */,
 				11913DF81FC00BD500E10BE9 /* ViewController.m */,
+				117C37C91FC140A2004AA861 /* XKTeacher.h */,
+				117C37CA1FC140A2004AA861 /* XKTeacher.m */,
 				117C37C61FC131A2004AA861 /* XKPerson.h */,
 				117C37C71FC131A2004AA861 /* XKPerson.m */,
 				11913E291FC0469D00E10BE9 /* UIImage+Image.h */,
@@ -348,6 +353,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11913DF91FC00BD500E10BE9 /* ViewController.m in Sources */,
+				117C37CB1FC140A2004AA861 /* XKTeacher.m in Sources */,
 				11913E441FC04DF700E10BE9 /* AFSecurityPolicy.m in Sources */,
 				11913E2B1FC0469D00E10BE9 /* UIImage+Image.m in Sources */,
 				11913DF61FC00BD500E10BE9 /* AppDelegate.m in Sources */,

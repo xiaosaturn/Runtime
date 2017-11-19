@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSObject+Property.h"
 #import "XKPerson.h"
+#import "XKTeacher.h"
 
 @interface ViewController ()
 
@@ -19,7 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self comRuntime];
+    [self encodeAndDecode];
+}
+
+//归档解档
+- (void)encodeAndDecode{
+    unsigned int count = 0;
+    Ivar *ivars = class_copyIvarList([XKTeacher class], &count);
+    Ivar ivar = ivars[0];
+    const char *name = ivar_getName(ivar);
+    NSLog(@"%s",name);
+    //    NSLog(@"%u",count);
 }
 
 //理解
